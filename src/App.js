@@ -21,6 +21,7 @@ import Swal from 'sweetalert2';
 
 function App() {
   ReactSession.setStoreType("localStorage");
+  
   const navigate = useNavigate();
   const logoClick = () => {
     navigate('/login',{replace:true})

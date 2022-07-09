@@ -11,8 +11,8 @@ const DashboardForm = (props) => {
     
     const {empresa,idEncuesta,index, titleEncuesta, descEncuesta, dateEncuesta} = {...props}
     const page = "/form/"+idEncuesta;
-    const link = "http://webdevcl.me/#/form/"+idEncuesta;
-    const linkAns = "http://webdevcl.me/#/"+empresa+"/getFormAnswers/"+idEncuesta;
+    const link = "https://udec-forms.up.railway.app/#/form/"+idEncuesta;
+    const linkAns = "https://udec-forms.up.railway.app/#/"+empresa+"/getFormAnswers/"+idEncuesta;
     const copyLink = () => {
         navigator.clipboard.writeText(link);
     }

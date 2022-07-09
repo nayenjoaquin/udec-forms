@@ -29,7 +29,7 @@ const DashboardForm = (props) => {
             confirmButtonText: 'Si, eliminar'
         }).then((result) => {
             if (result.value) {
-                const res = fetch('https://is2-server.up.railway.app/deleteForm/' + idEncuesta, {
+                const res = fetch('https://is2-server-production.up.railway.app/deleteForm/' + idEncuesta, {
                 'method' : 'GET'
                 }).then(response=>response.json())
                 res.then(data=>{

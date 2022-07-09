@@ -20,7 +20,7 @@ const Card = (props) => {
 
     const handleSi = () => {
         console.log("si")
-        const link = 'https://is2-server.up.railway.app/unsuscribe/confirm/' + md5
+        const link = 'https://is2-server-production.up.railway.app/unsuscribe/confirm/' + md5
         console.log(link)
 
         

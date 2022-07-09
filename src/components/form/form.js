@@ -20,7 +20,7 @@ const Form = (props) => {
     }, []);
 
     const getData = async () => {
-        const request = await fetch('https://is2-server.up.railway.app/getForm/' + id, {
+        const request = await fetch('https://is2-server-production.up.railway.app/getForm/' + id, {
             'method' : 'GET' 
         });
         return await request.json();

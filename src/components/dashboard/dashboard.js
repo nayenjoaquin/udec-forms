@@ -50,14 +50,14 @@ const Dashboard = (props) => {
 
     
     const getData = async () => {
-        const request = await fetch('https://is2-server.up.railway.app/getForms/' + empresa, {
+        const request = await fetch('https://is2-server-production.up.railway.app/getForms/' + empresa, {
             'method' : 'GET'
 
         });
         return await request.json();
     }
     const getInfo = async () => {
-        const img = await fetch('https://is2-server.up.railway.app/getInfo/' + empresa, {
+        const img = await fetch('https://is2-server-production.up.railway.app/getInfo/' + empresa, {
             'method' : 'GET'
 
         });
@@ -83,7 +83,7 @@ const Dashboard = (props) => {
             Correo: user
         }
         if (user !== "") {
-            const res = fetch('https://is2-server.up.railway.app/newUser', {
+            const res = fetch('https://is2-server-production.up.railway.app/newUser', {
                 'method' : 'POST',
                 headers : {
                     'Content-Type':'application/json'

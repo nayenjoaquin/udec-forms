@@ -45,7 +45,7 @@ const Register = () => {
         }
         console.log(inputs)
         const datosJSON = JSON.stringify(datos)
-        await fetch('https://is2-server.up.railway.app/newEmpresa',{
+        await fetch('https://is2-server-production.up.railway.app/newEmpresa',{
             'method' : 'POST',
                 headers : {
                     'Content-Type':'application/json'

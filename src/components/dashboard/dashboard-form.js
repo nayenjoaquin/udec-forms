@@ -11,8 +11,8 @@ const DashboardForm = (props) => {
     
     const {empresa,idEncuesta,index, titleEncuesta, descEncuesta, dateEncuesta} = {...props}
     const page = "/form/"+idEncuesta;
-    const link = "http://localhost:3000/#/form/"+idEncuesta;
-    const linkAns = "http://localhost:3000/#/"+empresa+"/getFormAnswers/"+idEncuesta;
+    const link = "http://webdevcl.me/#/form/"+idEncuesta;
+    const linkAns = "http://webdevcl.me/#/"+empresa+"/getFormAnswers/"+idEncuesta;
     const copyLink = () => {
         navigator.clipboard.writeText(link);
     }
@@ -29,7 +29,7 @@ const DashboardForm = (props) => {
             confirmButtonText: 'Si, eliminar'
         }).then((result) => {
             if (result.value) {
-                const res = fetch('http://localhost:5000/deleteForm/' + idEncuesta, {
+                const res = fetch('https://is2-server.up.railway.app/deleteForm/' + idEncuesta, {
                 'method' : 'GET'
                 }).then(response=>response.json())
                 res.then(data=>{

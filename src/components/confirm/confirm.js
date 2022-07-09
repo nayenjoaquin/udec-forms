@@ -25,7 +25,7 @@ const Confirm = (props) => {
 
 
     const getData = async () => {
-        const request = await fetch('http://localhost:5000/getMail/' + md5, {
+        const request = await fetch('https://is2-server.up.railway.app/getMail/' + md5, {
             'method' : 'GET' 
         });
 

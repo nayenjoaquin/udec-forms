@@ -7,7 +7,7 @@ const SubmitedForm = () => {
 
     const {formId} = useParams();
 
-    const link = "https://is2-client.herokuapp.com/#/form/"+formId;
+    const link = "https://webdevcl.me/#/form/"+formId;
 
     const copyLink = () => {
         navigator.clipboard.writeText(link);

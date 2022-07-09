@@ -20,7 +20,7 @@ const Form = (props) => {
     }, []);
 
     const getData = async () => {
-        const request = await fetch('https://server-encuestas.herokuapp.com/getForm/' + id, {
+        const request = await fetch('https://is2-server.up.railway.app/getForm/' + id, {
             'method' : 'GET' 
         });
         return await request.json();

@@ -26,7 +26,7 @@ const Login = () => {
         
         
         setLoading(true);
-        const response = fetch('http://localhost:5000/login',{
+        const response = fetch('https://is2-server.up.railway.app/login',{
             method: 'POST',
             headers: {'Content-Type':'application/json'},
             body: JSON.stringify({correo:inputs.correo,contraseña:md5(inputs.contraseña)})

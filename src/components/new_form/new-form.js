@@ -214,7 +214,7 @@ const NewForm = () => {
         }).then((result) => {
             if (result.value) {
                 navigate("/empresa/dashboard", {replace: true});
-                const res = fetch('http://localhost:5000/newForm/'+empresa,{
+                const res = fetch('https://is2-server.up.railway.app/newForm/'+empresa,{
                 'method' : 'POST',
                     headers : {
                         'Content-Type':'application/json'

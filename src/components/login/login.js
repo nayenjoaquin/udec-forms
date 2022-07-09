@@ -91,8 +91,6 @@ const Login = () => {
                         </div> */}
                         <button>Iniciar sesión</button>
                     </form>
-                    <div className="login-create-account">¿No estás registrado?<p onClick={e=>navigate('/register',{replace:true})}>Crea una cuenta</p>
-                    </div>
                 </div>
             </div>
             :<Loading></Loading>

@@ -75,7 +75,8 @@ function App() {
           <Route path='/submited-form/:formId' element={<SubmitedForm/>}/>
           <Route path='/submited-answer' element={<SubmitedAnswer/>}/>
           <Route path='/login' element={<Login/>}/>
-          <Route path='/register' element={<Register/>}/>
+          {//<Route path='/register' element={<Register/>}/> 
+          }
           <Route path= '/unsuscribe/:md5' element={<Confirm/>}/>
           <Route path= '/:empresa/getFormAnswers/:id' element={<ViewForm/>}/>
           <Route path="/" element={<Navigate to="/:empresa/dashboard" replace />}/>

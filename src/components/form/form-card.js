@@ -73,7 +73,7 @@ const FormCard = (props) => {
         else {
             setLoading(true);
             const data = JSON.stringify(respuestas);
-            const res = await fetch('https://is2-server-production.up.railway.app/newRespuesta',{
+            const res = await fetch('https://is2-server.up.railway.app/newRespuesta',{
                 'method' : 'POST',
                  headers : {
                      'Content-Type':'application/json'

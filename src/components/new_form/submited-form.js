@@ -7,7 +7,7 @@ const SubmitedForm = () => {
 
     const {formId} = useParams();
 
-    const link = "https://webdevcl.me/#/form/"+formId;
+    const link = "udec-forms.up.railway.app/#/form/"+formId;
 
     const copyLink = () => {
         navigator.clipboard.writeText(link);

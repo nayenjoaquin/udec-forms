@@ -66,7 +66,7 @@ const ViewForm = (props) => {
       return index;
     }
     const getData = async () => {
-        const request = await fetch('https://is2-server-production.up.railway.app/getFormAnswers/UdeC/' + id, {
+        const request = await fetch('https://is2-server.up.railway.app/getFormAnswers/UdeC/' + id, {
             'method' : 'GET' 
         });
 

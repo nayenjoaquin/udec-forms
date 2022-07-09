@@ -19,6 +19,11 @@
     "sweetalert2": "^11.4.20",
     "web-vitals": "^2.1.4"
   },
+  "engines":
+ {
+    "node": "14.16.1", 
+     "npm": "6.14.12"
+ },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
